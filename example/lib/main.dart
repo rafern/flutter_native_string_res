@@ -24,9 +24,14 @@ class _MyAppState extends State<MyApp> {
     String resourceContent;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      var res = NativeStringResource(androidName: 'hello');
+      var res = NativeStringResource(
+        androidName: 'hello',
+        iOSName: 'hello',
+        iOSPlistName: 'Test_list'
+      );
       resourceContent = await res.value;
-    } on PlatformException {
+    } on PlatformException catch(e,s) {
+      print('Exception $e:\n$s');
       resourceContent = 'Failed to get resource string value.';
     }
 
