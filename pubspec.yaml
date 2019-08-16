@@ -1,7 +1,7 @@
 name: flutter_native_string_res
 description: Flutter plugin for gettings native string resources
 version: 0.0.1
-author: rafern
+author: rafern <rafern@protonmail.com>
 homepage: https://github.com/rafern/flutter_native_string_res
 
 environment:
