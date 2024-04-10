@@ -6,9 +6,8 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
 import 'package:flutter_native_string_res_example/main.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('Verify string resource fetch', (WidgetTester tester) async {
@@ -19,7 +18,7 @@ void main() {
     expect(
       find.byWidgetPredicate(
         (Widget widget) => widget is Text &&
-                           widget.data.startsWith('Resource value:'),
+                           widget.data?.startsWith('Resource value:') == true,
       ),
       findsOneWidget,
     );
