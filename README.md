@@ -1,3 +1,10 @@
+# THIS PROJECT IS DISCONTINUED
+
+See https://github.com/rafern/flutter_native_string_res/pull/1#issuecomment-2054007778 for reasoning.
+Feel free to fork this as it is public domain.
+
+Original README below:
+
 # flutter_native_string_res
 
 Flutter plugin for getting native string resources
